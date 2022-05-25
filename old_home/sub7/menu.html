@@ -1,0 +1,10 @@
+	<div id="sub_menu">
+		<img src="<?=$Where?>sub7/images/sub_menu.gif" style="margin-bottom:15px;">
+<?if($user_code=="" || $user_code=="0"){?>
+		<A HREF="<?=$Board_path?>/board/member_login.php"><img src="<?=$Where?>sub7/images/sub_menu_01.gif" name="sub1" id="sub1" onmouseover="highlightMenuImg(this);" onmouseout="restoreImg(this);" class="sub_menu"></A><BR>
+		<A HREF="<?=$Board_path?>/join/member_agree.php"><img src="<?=$Where?>sub7/images/sub_menu_02.gif" name="sub2" id="sub2" onmouseover="highlightMenuImg(this);" onmouseout="restoreImg(this);" class="sub_menu"></A><BR>
+		<A HREF="<?=$Board_path?>/board/member_find_idpw.php"><img src="<?=$Where?>sub7/images/sub_menu_03.gif" name="sub3" id="sub3" onmouseover="highlightMenuImg(this);" onmouseout="restoreImg(this);" class="sub_menu"></A><BR>
+<?}else{?>
+		<A HREF="<?=$Board_path?>/board/member_info.php"><img src="<?=$Where?>sub7/images/sub_menu_04.gif" name="sub1" id="sub1" onmouseover="highlightMenuImg(this);" onmouseout="restoreImg(this);" class="sub_menu"></A><BR>
+<?}?>
+	</div>

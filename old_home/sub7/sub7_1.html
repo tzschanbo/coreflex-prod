@@ -1,0 +1,36 @@
+<? include "../../include/head_bbs.html";
+//현재 파일명 추출하기 시작
+$now_pageurl = trim($_SERVER["REQUEST_URI"]);
+$now_pageurl = explode("/",$now_pageurl);
+krsort($now_pageurl);
+reset($now_pageurl);
+while(list($key,$value) = each($now_pageurl)){
+	$now_pagepath=$now_pageurl[$key];
+	break;
+}
+
+$now_pagepath=explode("?",$now_pagepath);
+$now_pagepath=$now_pagepath[0];
+//현재 파일명 추출하기 끝
+
+if($now_pagepath=='member_login.php') $sub_name='sub1';
+elseif($now_pagepath=='member_agree.php' or $now_pagepath=='member_join.php') $sub_name='sub2';
+elseif($now_pagepath=='member_find_idpw.php') $sub_name='sub3';
+elseif($now_pagepath=='member_info.php' or $now_pagepath=='member_secession_ok.php' or $now_pagepath=='member_joinok_view.php') $sub_name='sub1';
+else $sub_name='sub1';
+
+?>
+<body id=sub  onLoad="initMenu('<?=$sub_name?>', '', '');">
+
+	<div id="m_flash"><img src="<?= $Where ?>images/f_sub.gif"></div>
+
+
+	<? include "../../sub7/menu.html"; ?>
+
+
+
+
+
+
+
+

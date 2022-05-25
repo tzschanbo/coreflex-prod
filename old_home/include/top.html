@@ -1,0 +1,48 @@
+<!------------------------------------------------------------------------------------------------------------------
+  설명서 - head.html , head_bbs.html , index.html 상단 '나야보드 경로','도메인주소','회사명' 변경!!!!!
+-------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<!---META HTTP-EQUIV="imagetoolbar" CONTENT="no"--->
+<TITLE><?=$Board_title?></TITLE>
+<link rel="stylesheet" type="text/css" href="<?= $Where ?>style.css">
+<script type="text/javascript" src="<?= $Where ?>s_leftmenu.js"></script>
+<script type="text/javascript" src="<?= $Board_path ?>/class/js/login_check.js"></script>
+</HEAD>
+
+<body bgcolor="white" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0">
+<div id="wrap">
+
+	<div id="gnb">
+		<div id="logo">&nbsp;<A HREF="<?= $Where ?>index.html"><img src="<?= $Where ?>images/logo.png"></A></div>
+		<div id="menu">
+
+			<div id="top_m">
+<!--
+				<? if($user_admin==1){ ?><A HREF="<?=$Board_path?>/admin/admin.php" target="_blank"><img src="<?= $Where ?>images/t_m_admin.gif"></A><? } ?><?if($user_code=="" || $user_code=="0"){?><A HREF="<?=$Board_path?>/board/member_login.php"><img src="<?= $Where ?>images/t_m_login.gif"></A><img src="<?= $Where ?>images/t_m.gif"><A HREF="<?=$Board_path?>/join/member_agree.php"><img src="<?= $Where ?>images/t_m_join.gif"></A><? } else {  ?><img src="<?= $Where ?>images/t_m.gif"><A HREF="<?=$Board_path?>/board/member_info.php"><img src="<?= $Where ?>images/t_m_mypage.gif"></A><img src="<?= $Where ?>images/t_m.gif"><A HREF="<?=$Board_path?>/board/logout.php"><img src="<?= $Where ?>images/t_m_logout.gif"></A><? } ?><img src="<?= $Where ?>images/t_m.gif"><A HREF="<?= $Where ?>sub6/sub6_1.html"><img src="<?= $Where ?>images/t_m_sitemap.gif"></A>
+-->
+			</div>
+
+        			
+			<div id="top_menu">
+
+				<div style="text-align:center;">
+
+					<a href="<?= $Where ?>sub1/sub1_1.html" onMouseOver="tm01.src='<?= $Where ?>images/menu_01o.gif'" onMouseOut="tm01.src='<?= $Where ?>images/menu_01.gif'"><img src="<?= $Where ?>images/menu_01.gif" name="tm01" border="0"></a>
+
+					<a href="<?= $Where ?>sub2/sub2_1.html" onMouseOver="tm02.src='<?= $Where ?>images/menu_02o.gif'" onMouseOut="tm02.src='<?= $Where ?>images/menu_02.gif'"><img src="<?= $Where ?>images/menu_02.gif" name="tm02" border="0"></a>
+
+					<a href="<?= $Where ?>sub3/sub3_1.html" onMouseOver="tm03.src='<?= $Where ?>images/menu_03o.gif'" onMouseOut="tm03.src='<?= $Where ?>images/menu_03.gif'"><img src="<?= $Where ?>images/menu_03.gif" name="tm03" border="0"></a>
+
+          <a href="<?= $Where ?>sub4/sub4_1.html" onMouseOver="tm04.src='<?= $Where ?>images/menu_04o.gif'" onMouseOut="tm04.src='<?= $Where ?>images/menu_04.gif'"><img src="<?= $Where ?>images/menu_04.gif" name="tm04" border="0"></a>
+
+<!--					<a href="<?=$Board_path?>/board/list.php?boardname=notice" onMouseOver="tm04.src='<?= $Where ?>images/menu_04o.gif'" onMouseOut="tm04.src='<?= $Where ?>images/menu_04.gif'"><img src="<?= $Where ?>images/menu_04.gif" name="tm04" border="0"></a>
+-->
+
+				</div>
+			</div>
+
+		</div>
+	</div>

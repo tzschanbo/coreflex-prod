@@ -1,0 +1,20 @@
+<?
+    session_start();
+    $Dir_path="../";  //현재파일에서 나야보드 설치 디렉토리까지의 상대경로
+    $Dir_name="nayaboard"; // 나야보드 설치 디렉토리명
+
+    /*################# dbconnect.inc 사용환경 변수######################
+    1. DB 접속
+    2. $Where : 도메인명(관리자모드에서 변경가능)
+    3. $Board_path : 도메인명($Where) + 나야보드 설치 디렉토리명($Dir_name)
+    4. $Board_title : 사이트 타이틀 (관리자모드에서 변경가능)
+    #####################################################################*/
+    
+    include $Dir_path.$Dir_name."/dbconnect.inc";
+
+    $logingroup="1";
+    $loginskin=$Login_skinname;
+    include $Dir_path.$Dir_name."/out.php";
+?>
+
+<? include "../include/top.html"; ?>

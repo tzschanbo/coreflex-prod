@@ -1,0 +1,55 @@
+<?
+    session_start();
+    $Dir_path="./";  //현재파일에서 나야보드 설치 디렉토리까지의 상대경로
+    $Dir_name="nayaboard"; // 나야보드 설치 디렉토리명
+
+    /*################# dbconnect.inc 사용환경 변수######################
+    1. DB 접속
+    2. $Where : 도메인명(관리자모드에서 변경가능)
+    3. $Board_path : 도메인명($Where) + 나야보드 설치 디렉토리명($Dir_name)
+    4. $Board_title : 사이트 타이틀 (관리자모드에서 변경가능)
+    #####################################################################*/
+
+    include $Dir_path.$Dir_name."/dbconnect.inc";
+
+    if(($SSL_yn=='Y' or $Redirection_yn=='Y') and (!eregi($SSL_domain,$_SERVER[HTTP_HOST]) and !eregi($_SERVER[HTTP_HOST],$SSL_domain))) header("location: http://".$SSL_domain);
+
+    $logingroup="1";
+    $loginskin=$Login_skinname;
+    include $Dir_path.$Dir_name."/out.php";
+?>
+
+	<? include "include/top.html"; ?>
+
+	<div id="m_flash"><img src="images/f_main.gif"></div>
+
+	<div style="float:left;padding-left:198px;">
+		<A HREF="sub1/sub1_4.html"><img src="images/bn_01.gif" style="margin-bottom:8px;"></A><BR>
+		<img src="images/bn_02.gif">
+	</div>
+
+	<!-- 공지사항 -->
+	<div id="notice_box" style="width:329;margin-left:35;">
+		<div id="left"><img src="images/t_notice.gif"></div>
+<!--
+		<div id="right"><A HREF="<?=$Board_path?>/board/list.php?boardname=notice"><img src="images/more.gif"></A></div>
+-->
+		<div id="line"><img src="images/bbs_line.gif"></div>
+		<? out_basic('notice', 'simple', 5, 22); ?>
+	</div>
+	<!-- //공지사항 -->
+
+	<!-- 뉴스 -->
+	<div id="notice_box" style="width:370;margin-left:35;">
+		<div id="left"><img src="images/t_product.gif"></div>
+		<div id="right"><A HREF="sub3/sub3_1.html"><img src="images/more.gif"></A></div>
+
+		<div style="clear:both;padding-top:10px;padding-left:1px;">
+			<A HREF="sub3/sub3_2.html"><img src="images/p_img01.gif"></A><img src="images/p.gif" style="margin:0 6px;"><A HREF="sub3/sub3_3.html"><img src="images/p_img02.gif"></A>
+		</div>
+	</div>
+	<!-- //뉴스 -->
+
+<? include "include/foot.html"; ?>
+<? out_popup('1','1');out_popup('1','2');out_popup('1','3');out_popup('1','4');?>
+

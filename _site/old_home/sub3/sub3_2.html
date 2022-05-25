@@ -1,0 +1,178 @@
+<? include "../include/head.html"; ?>
+<body id=sub  onLoad="initMenu('sub2', '', '');">
+
+<!--
+	<div id="m_flash"><img src="<?= $Where ?>images/f_sub.gif"></div>
+-->
+
+	<? include "menu.html"; ?>
+
+
+	<!-- 컨텐츠 -->
+	<div id="c_content">
+		<div id="navi">홈 > 제품소개 > <FONT class="n">증권</font></div>
+		<div id="c_title"><img src="images/title_02.gif"></div>
+		
+
+    <p class="compTitle"><img src="images/compLeftArrow.png" alt=">" />&nbsp;시스템 개요</p>
+		<div class="l18"> 
+      <p id="systemIntroText">코어플렉스의 증권시스템 솔루션에는 기존의 위탁원장을 자체적으로 운영하는 원장 이관사, 그리고 사이버 증권사
+         형태를 포함한 증권사 전체의 업무를 수용하는 솔루션을 보유하고 있습니다.<br />
+         고객정보에서부터 각종 주문 매체 ( HTS, WEB, Mobile, CTI,특수주문 등..) 를 통한 주문과 방카슈랑스,
+         랩어카운트 시스템등과의 인터페이스 그리고 영업전반에 발생되는 자료를 실시간 통합및 가공형태 정보로
+         제공함으로써 고객만족 및 영업전략에 유용한 정보 기반을 이룰 수 있겠습니다.
+         기본적으로 OPEN 아키텍쳐를 지향하고 있으며 데이타베이스 설계의 최적화 및 각종 트레이딩에 따른대외기관과의 
+         기술적 인터페이스, 데이타워어하우징, 데이타마트등의 각종 정보기술 적용 기반은 급변하는 대내외환경에 유연하게
+         대처할 수 있는 통합되어진 시스템 구조를 지향하고 있습니다.
+      </p>
+		</div>
+
+                
+
+		
+		<p class="compTitle"><img src="images/compLeftArrow.png" alt=">" />&nbsp;시스템 구성</p>
+		<div class="l18"> 
+      <div id="sysStructBG">
+          <div id="externalReport">
+              <ul>
+                  <li>-&nbsp;감독원</li>
+                  <li>-&nbsp;거래소</li>
+                  <li>-&nbsp;국세청</li>
+                  <li>-&nbsp;증권업협회</li>
+                  <li>-&nbsp;예탁원등</li>
+              </ul>
+          </div>
+          <div id="batch">
+              <ul>
+                  <li>-&nbsp;수도결제</li>
+                  <li>-&nbsp;실적관리</li>
+                  <li>-&nbsp;대외자료생성</li>
+                  <li>-&nbsp;익일자료생성</li>
+              </ul>
+          </div>
+          <div id="externalInterface">
+              <ul>
+                  <li>-&nbsp;거래소</li>
+                  <li>-&nbsp;KOSDAQ</li>
+                  <li>-&nbsp;증권전산</li>
+                  <li>-&nbsp;협회</li>
+                  <li>-&nbsp;은행(연합회)</li>
+                  <li>-&nbsp;OTCBB</li>
+                  <li>-&nbsp;ECN</li>
+              </ul>
+          </div>
+      </div>
+      <div>
+          <table id="sysDetails">
+              <tr>
+                  <th class="thodd">영업점</th>
+                  <th class="theven"></th>
+                  <th class="thodd">매매</th>
+                  <th class="theven"></th>
+                  <th class="thodd">영업지원</th>
+                  <th class="theven"></th>
+                  <th class="thodd">본사영업</th>
+                  <th class="theven"></th>
+                  <th class="thodd">본사관리</th>
+                  <th class="theven"></th>
+                  <th class="thodd">전산운영</th>
+                  <th class="theven"></th>
+                  <th class="thodd">인터페이스</th>
+              </tr>
+              <tr>
+                  <td class="tdodd">
+                      <ul>
+                          <li>계좌관리</li>
+                          <li>출납관리</li>
+                          <li>신용관리</li>
+                          <li>일괄처리</li>
+                          <li>마감관리</li>
+                          <li>담보대출</li>
+                          <li>은행연계</li>
+                      </ul>
+                  </td>
+                  <td></td>
+                  <td class="tdodd">
+                      <ul>
+                          <li>주문체결</li>
+                          <li>비회원사주문</li>
+                          <li>외국인 한도</li>
+                          <li>일괄주문</li>
+                          <li>수도결제</li>
+                      </ul>
+                  </td>
+                  <td></td>
+                  <td class="tdodd">
+                      <ul>
+                          <li>영업정보실적<br/>&nbsp;&nbsp;&nbsp;/통계/현황</li>
+                          <li>관리계좌</li>
+                          <li>유가증권</li>
+                          <li>권리</li>
+                          <li>감사</li>
+                          <li>위험관리</li>
+                          <li>대외보고</li>
+                      </ul>
+                  </td>
+                  <td></td>
+                  <td class="tdodd">
+                      <ul>
+                          <li>상품주식</li>
+                          <li>상품채권</li>
+                          <li>CD/CP/RP</li>
+                          <li>상품선물옵션</li>
+                      </ul>
+                  </td>
+                  <td></td>
+                  <td class="tdodd">
+                      <ul>
+                          <li>관리회계</li>
+                          <li>재무회계</li>
+                          <li>자동분개</li>
+                          <li>자금</li>
+                          <li>예산</li>
+                          <li>고정자산</li>
+                      </ul>
+                  </td>
+                  <td></td>
+                  <td class="tdodd">
+                      <ul>
+                          <li>사용자관리</li>
+                          <li>Menu관리</li>
+                          <li>Object관리</li>
+                          <li>Monitoring</li>
+                          <li>공통기준정보</li>
+                          <li>Daily 작업</li>
+                      </ul>
+                  </td>
+                  <td></td>
+                  <td class="tdodd">
+                      <ul>
+                          <li>WRAP A/C</li>
+                          <li>방카슈랑스</li>
+                          <li>HTS</li>
+                          <li>Auto Stock</li>
+                          <li>콜센터</li>
+                          <li>무선매체</li>
+                          <li>특수고객</li>
+                          <li>대외접속(FIX)</li>
+                      </ul>
+                  </td>
+              </tr>
+          </table>
+      </div>
+		</div>
+
+
+
+		<p class="compTitle"><img src="images/compLeftArrow.png" alt=">" />&nbsp;시스템 특징</p>
+		<div class="l18"> 
+      <img id="systemCharBG" src="images/systemChar.png">
+   	</div>
+
+		
+
+	</div>
+	<!-- //컨텐츠 -->
+
+
+<? include "../include/foot.html"; ?>

@@ -1,0 +1,544 @@
+<? include "../include/head.html"; ?>
+<body id=sub  onLoad="initMenu('sub3', '', '');">
+
+<!--
+	<div id="m_flash"><img src="<?= $Where ?>images/f_sub.gif"></div>
+-->
+
+	<? include "menu.html"; ?>
+
+
+	<!-- 컨텐츠 -->
+	<div id="c_content">
+		<div id="navi">홈 > 제품소개 > <FONT class="n">리스</font></div>
+		<div id="c_title"><img src="images/title_03.gif"></div>
+		
+
+    <p class="compTitle"><img src="images/compLeftArrow.png" alt=">" />&nbsp;시스템 개요</p>
+		<div id="leaseSysStruct" class="l18"> 
+      <p id="lsInfoText">당사의 NFBIS(Non-banking Financing Business Integrated System: 엔에프비즈) 시스템은
+         리스 전업사 및 여신전문 금융기관을 위한 여신전문통합 Package입니다.<br/>
+         최초 출발은 리스전업사의 통합경영정보시스템이었으나 급변하는 금융환경의 영역파괴와
+         종합화, 금융화, 증권화의 흐름에 맞추어 여신전문기관의 조달업무(원화, 외화 자금업무),
+         가계 및 기업을 대상으로 한 리스, 자동차리스, 운전 자금 대출 및 가계대출, 팩토링금융,
+         어음할인 및 IMF이후의 금융기관의 자산양수(도) 업무, 심사업무를 비롯한 각종 지원 및
+         통제 업무를 전체 통합하였으며, 업무단위로 분할하여 출하 가능하도록 구현되어 있습니다.
+      </p>
+		</div>
+
+
+		<p class="compTitle"><img src="images/compLeftArrow.png" alt=">" />&nbsp;시스템 구성</p>
+		<div class="l18"> 
+			<table id="lsStructTable">
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td class="lsBlank"></td>
+			      <td></td>
+			      <td class="lsBlank"></td>
+			      <td id="lsStructTableTitle" colspan="3">NFBIS 여신전문시스템</td>
+			      <td class="lsBlank"></td>
+			      <td></td>
+			      <td class="lsBlank"></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td class="lsvl lsul" colspan="11">&nbsp;</td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td class="lsvl" colspan="2"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td class="lsBlank"></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl" colspan="2"></td>
+			  </tr>
+			  <tr>
+			      <td class="lsstTitle" colspan="2">경영관리</td>
+			      <td></td>
+			      <td class="lsstTitle">조&nbsp;&nbsp;달</td>
+			      <td></td>
+			      <td class="lsstTitle">심&nbsp;&nbsp;사</td>
+			      <td></td>
+			      <td class="lsstTitle">영&nbsp;&nbsp;업</td>
+			      <td></td>
+			      <td class="lsstTitle">지&nbsp;&nbsp;원</td>
+			      <td></td>
+			      <td class="lsstTitle" colspan="2">전산운영</td>
+			  </tr>
+			  <tr>
+			      <td class="lsvl" colspan="2"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl" colspan="2"></td>
+			  </tr>
+			  <tr>
+			      <td class="lsstContents" colspan="2">사업계획</td>
+			      <td></td>
+			      <td class="lsstContents">자금계획/실적</td>
+			      <td></td>
+			      <td class="lsstContents">고객관리</td>
+			      <td></td>
+			      <td class="lsstContents">리스</td>
+			      <td></td>
+			      <td class="lsstContents">회계</td>
+			      <td></td>
+			      <td class="lsstContents" colspan="2">시스템관리</td>
+			  </tr>
+			  <tr>
+			      <td class="lsvl" colspan="2"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl" colspan="2"></td>
+			  </tr>
+			  <tr>
+			      <td class="lsstContents" colspan="2">ELS</td>
+			      <td></td>
+			      <td class="lsstContents">원화자금</td>
+			      <td></td>
+			      <td class="lsstContents">여신심사</td>
+			      <td></td>
+			      <td class="lsstContents">렌탈</td>
+			      <td></td>
+			      <td class="lsstContents">총무</td>
+			      <td></td>
+			      <td class="lsstContents" colspan="2">사용자관리</td>
+			  </tr>
+			  <tr>
+			      <td class="lsvl" colspan="2"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl" colspan="2"></td>
+			  </tr>
+			  <tr>
+			      <td class="lsstContents" colspan="2">ALS</td>
+			      <td></td>
+			      <td class="lsstContents">외화자금</td>
+			      <td></td>
+			      <td class="lsstContents">결재관리</td>
+			      <td></td>
+			      <td class="lsstContents">자동차리스</td>
+			      <td></td>
+			      <td class="lsstContents">인사/급여</td>
+			      <td></td>
+			      <td class="lsstContents" colspan="2">메뉴관리</td>
+			  </tr>
+			  <tr>
+			      <td class="lsvl" colspan="2"></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td class="lsvl" colspan="2"></td>
+			  </tr>
+			  <tr>
+			      <td class="lsstContents" colspan="2">대내외보고</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsstContents">채권서류관리</td>
+			      <td></td>
+			      <td class="lsstContents">팩토링</td>
+			      <td></td>
+			      <td class="lsstContents">고정자산</td>
+			      <td></td>
+			      <td class="lsstContents" colspan="2">기준정보관리</td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsstContents">어음할인</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsstContents">대출</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsstContents">지급보증</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsstContents">자산양수관리</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsvl"></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			  <tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td class="lsstContents">ABS자산관리</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			  </tr>
+			</table>
+    </div>
+
+    <p class="compTitle"><img src="images/compLeftArrow.png" alt=">" />&nbsp;시스템 특징1</p>
+    <div id="leaseSysChar1" class="l18"> 
+      <table id="lsChar1Table">
+          <tr>
+              <td id="row1col1">A</td>
+              <td id="row1col2">ALM 시스템</td>
+          </tr>
+          <tr>
+              <td id="row2col1">B</td>
+              <td id="row2col2">전략적인 이익관리 체계</td>
+          </tr>
+          <tr>
+              <td id="row3col1">C</td>
+              <td id="row3col2">완벽한 양수도 업무처리 지원</td>
+          </tr>
+          <tr>
+              <td id="row4col1">D</td>
+              <td id="row4col2">완벽한 공동리스 관리 시스템</td>
+          </tr>
+          <tr>
+              <td id="row5col1">E</td>
+              <td id="row5col2">금융상품별 100% Scheduling에 의한 계획관리 및 ALM자료 자동산출 지원</td>
+          </tr>
+          <tr>
+              <td id="row6col1">F</td>
+              <td id="row6col2">효율적인 리스료 수납체계</td>
+          </tr>
+          <tr>
+              <td id="row7col1">G</td>
+              <td id="row7col2">해지이후 관리에 대한 완벽한 시스템</td>
+          </tr>
+          <tr>
+              <td id="row8col1">H</td>
+              <td id="row8col2">100% Real Time 자동분개</td>
+          </tr>
+          <tr>
+              <td id="row9col1">I</td>
+              <td id="row9col2">결산보정율을 포함한 종합회계 시스템</td>
+          </tr>
+          <tr>
+              <td id="row10col1">J</td>
+              <td id="row10col2">영업정보와 취득담보간의 연계된 정보관리 체계</td>
+          </tr>
+      </table>
+		</div>
+
+		<p class="compTitle"><img src="images/compLeftArrow.png" alt=">" />&nbsp;시스템 특징2</p>
+		<div id="leaseSysChar2" class="l18"> 
+		  <table id="lsChar2Table1" class="lsChar2Table">
+		      <tr>
+		          <td class="lsno" id="lsno1" rowspan="5"></td>
+		          <td id="lsChar2Table1Head1" colspan="2">경영관리</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;사업계획</td>
+		          <td class="lsChar2ContentText">: 회사의 장단기 사업계획을 기존자료와 향후 영업계획 및 변동조선 입력을 통한 추정
+		              B/S, P/L 및 각종 보고자료 자동생성</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;EIS</td>
+		          <td class="lsChar2ContentText">: 각종 영업자료, 계획대비 실적자료를 월간, 년간 주요 통계를 그래프와 Sheet로
+		              일목요연하게 보여줌으로써 회사임원 및 고위 간부의 의사결정을 지원.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;ALM</td>
+		          <td class="lsChar2ContentText">: 금리위험, 유동성위험, 환위험등을 시뮬레이션을 통해 분석하여 미래의 위험에 대비하고,
+		              기회를 극대화하는 전략추구를 지원.</td>
+		      </tr>
+		          <td class="lsChar2ContentTitle">&bull;대내외보고</td>
+		          <td class="lsChar2ContentText">: 한국은행보고, 재경부 보고 등 대외보고와 주요 경영진 월간회의 자료등을 자동으로 생성하여 제공.</td>
+		      </tr>
+		  </table>
+		  <table id="lsChar2Table2" class="lsChar2Table">
+		      <tr>
+		          <td class="lsno" id="lsno2" rowspan="4"></td>
+		          <td colspan="2" id="lsChar2Table1Head2">조달</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;자금계획/실적</td>
+		          <td class="lsChar2ContentText">: 회사의 장단기 사업계획을 기존자료와 향후 영업계획 및 변동조선 입력을 통한 추정 B/S, P/L 및
+		              각종 보고자료 자동생성.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;원화자금</td>
+		          <td class="lsChar2ContentText">: 원화 단기거래(콜, 콜머니, 단기운영, 조달) 및 장기 차입 및 운영,
+		              특히 리스거래와 관련한 조달자금의 연계관리를 통한 금리위험 관리</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;외화자금</td>
+		          <td class="lsChar2ContentText">: 외화 단기거래(Spot, Forward) 및 장기 차입 및 인출에 관한 제업무,
+		              특히 리스거래와 관련한 수입 통관 업무 및 차입의 연계관리를 통한 금리 및 환위험 관리.</td>
+		      </tr>
+		  </table>
+		  <table id="lsChar2Table3" class="lsChar2Table">
+		      <tr>
+		          <td class="lsno" id="lsno3" rowspan="5"></td>
+		          <td colspan="2" id="lsChar2Table1Head3">심사</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;고객관리</td>
+		          <td class="lsChar2ContentText">: 고객중심 영업을 위한 제반 고객 정보를 관리하고 주기적으로 정보를 갱신 관리. 개인 고객도 관리 기능.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;여신심사</td>
+		          <td class="lsChar2ContentText">: 정기, 비정기적으로 기존고객의 여신상태를 점검하여 신용평점을 유지관리하고, 신규 고객에 대한
+		              신의 가부 및 기타 의견을 제공.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;결재관리</td>
+		          <td class="lsChar2ContentText">: 심사 업무 및 업무 규정에 의한 내부 결재과정의 전산 관리로 결재 시간의 단축 및 문서와
+		              전자데이타의 일치성 보장</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;채권서류심사</td>
+		          <td class="lsChar2ContentText">: 영업과 관련한 대고객, 공급자, 계약문건 등 업무규정에 의한 제반 서류의 징구 여부
+		              및 보관 상태, 결재 상태 등을  관리</td>
+		      </tr>
+		  </table>
+		  <table id="lsChar2Table4" class="lsChar2Table">
+		      <tr>
+		          <td class="lsno" id="lsno4" rowspan="9"></td>
+		          <td colspan="2" id="lsChar2Table1Head4">영업</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;리스</td>
+		          <td class="lsChar2ContentText">: 영업 각종 손익에 대한 시뮬레이션, 공동리스 주간사 업무 완벽지원, 해지후 업무 전과정의
+		              완벽한 전산 처리, 리스 물건 관리를 통한 자산 양수(도) 업무와 연계.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;렌탈</td>
+		          <td class="lsChar2ContentText">: 렌탈 물건 관리 및 부가세 관리</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;자동차 리스</td>
+		          <td class="lsChar2ContentText">: 기준정보 관리로 소액 다량의 자동차리스 업무를 소수의 한정도니 인원으로 처리 가능하도록 함으로써 수익실현</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;팩토링/어음할인</td>
+		          <td class="lsChar2ContentText">: 어음위탁, 교환, 결제의 자동관리.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;대출</td>
+		          <td class="lsChar2ContentText">: 가계 및 기업을 대상으로 한 보증대출 및 신용대출.대출조건의 시뮬레이션으로
+		              최적의 고객서비스 및 수익조건 대출.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;지급보증</td>
+		          <td class="lsChar2ContentText">: 보증조건에 따른 보증료 수납, 대지급, 충당금, 부도(해제) 관리</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;자산양수(도)</td>
+		          <td class="lsChar2ContentText">: 타금융기관의 리스자산을 양수받아 당사의 리스자산으로 전환하여 당사 여신 리스거래와 별도/통합 관리.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;ABS자산관리</td>
+		          <td class="lsChar2ContentText">: ABS의 기저자산(UnderWrite Asset)에 대한 관리업무를 담당하는 Agency업무의 수행.</td>
+		      </tr>
+		  </table>
+		  <table id="lsChar2Table5" class="lsChar2Table">
+		      <tr>
+		          <td class="lsno" id="lsno5" rowspan="5"></td>
+		          <td colspan="2" id="lsChar2Table1Head5">지원</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;회계</td>
+		          <td class="lsChar2ContentText">: 자동분개된 전업무의 마감체계, 수기전표에 대한 관리, (가)결산 시뮬레이션 및 확정, 각종 보고서 제공</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;총무</td>
+		          <td class="lsChar2ContentText">: 예산관리 및 지출결의 관리, 카드미지급 관리.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;인사/급여</td>
+		          <td class="lsChar2ContentText">: 채용정보부터 발령사항, 제정보에 의한 자동 급상여 처리</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;고정자산</td>
+		          <td class="lsChar2ContentText">: 회사소유의 각종 유형고정자산에 대한 관리, 리스자산의 고정자산으로의 환입관리.</td>
+		      </tr>
+		  </table>
+		  <table id="lsChar2Table6" class="lsChar2Table">
+		      <tr>
+		          <td class="lsno" id="lsno6" rowspan="5"></td>
+		          <td colspan="2" id="lsChar2Table1Head6">시스템관리</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;시스템관리</td>
+		          <td class="lsChar2ContentText">: 클라이언트 버전관리, 시스템 서버관리, 모듈관리, 각자원에 대한 모니터링.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;사용자관리</td>
+		          <td class="lsChar2ContentText">: 최종 사용자의 관한과 업무부문, 등급, 상태관리를 통한 Authority 부여.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;메뉴관리</td>
+		          <td class="lsChar2ContentText">: 사용자별 업무에 최적화된 메뉴관리로 시스템 보안과 업무보안 강화.</td>
+		      </tr>
+		      <tr>
+		          <td class="lsChar2ContentTitle">&bull;기준정보 관리</td>
+		          <td class="lsChar2ContentText">: 변경가능한 전 데이터의 기준정보 구축으로 환경변화로부터 Flexible한 프로그램 구현, 유지관리의효율성.</td>
+		      </tr>
+		  </table>
+   	</div>
+
+		
+
+	</div>
+	<!-- //컨텐츠 -->
+
+
+<? include "../include/foot.html"; ?>
