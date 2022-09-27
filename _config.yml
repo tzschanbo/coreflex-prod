@@ -1,8 +1,8 @@
 theme: jekyll-theme-minimal
-title: SwapBTT.com
-description: Swap BTT on mobile device.
-logo: https://swapbtt.com/swapbtt.png
+title: blog.medallia.co.kr
+description: 메달리아 기술 블로그
+#logo: https://swapbtt.com/swapbtt.png
 port: 4000
 google_analytics : G-XW3LSKJQG4
-url : https://swapbtt.com
+url : https://blog.medallia.co.kr
 

@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://test.crflx.com/sitemap.xml

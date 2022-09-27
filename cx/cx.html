@@ -1,0 +1,1359 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>coreflex</title>	
+<meta name="application-name" content="coreflex"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="코어플렉스 - 고객경험 솔루션 메달리아 서비스 소개">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="CX솔루션, CX 솔루션, CX, 고객경험, 메달리아, 코어플렉스, Medallia, MEC, Decibel" />
+
+<meta property="og:type" content="website">
+<meta property="og:description" content="코어플렉스 - 고객경험 솔루션 메달리아 서비스 소개">
+<meta property="og:site_name" content="코어플렉스 - 고객경험">
+<meta property="og:url" content="https://test.crflx.com/cx.html">
+<meta property="og:title" content="코어플렉스 - 고객경험">
+<meta property="og:image" content="https://test.crflx.com/cx.jpg">
+<meta property="og:locale" content="ko_KR">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+<link rel="apple-touch-icon-precomposed" href="/apple-icon-152x152.png">
+<link rel="apple-touch-startup-image" href="/apple-icon-152x152.png">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<!-- Chrome, Firefox OS, Opera -->
+<meta name="theme-color" content="#484848">
+  
+<!-- <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<meta http-equiv="refresh" content="-1"> -->
+
+<link rel="stylesheet" href="main.css">
+<link rel="shortcut icon" href="./favicon.png">
+
+<!-- Scripts -->
+<script src="./jquery.min.js"></script>
+<script src="./skel.min.js"></script>
+<script src="./util.js"></script>
+<script src="./main.js"></script>
+
+<script src = "http://www.youtube.com/player_api"></script>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #484848; 
+  background-color: white; 
+}
+
+.originalText{
+font-size: 0px;
+
+}
+
+.originalButton { 
+  background-color:transparent !important; 
+  cursor : pointer;
+}
+
+
+#myImg{
+		height: 100%;
+		width: 100%;
+}
+
+
+#videoPlayer { width: 100%;}
+/*
+@media screen and (max-width: 820px) {
+	#myImg{
+		//content:url("indexm.png");
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media all and (min-width:821px) {
+    #myImg{
+		//content:url("index.png");
+		height: 100%;
+		width: 100%;
+	}
+}
+*/
+/* 
+
+
+
+</style>
+ 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-91EJDD6TF4"></script>
+<script>
+
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-91EJDD6TF4');
+
+
+function player_state_changed(state) {
+  /* This event is fired whenever the player's state changes.
+     Possible values are:
+     - unstarted (-1)
+     - ended (0)
+     - playing (1)
+     - paused (2) 
+     - buffering (3)
+     - video cued (5). 
+     When the SWF is first loaded it will broadcast an unstarted (-1) event.
+     When the video is cued and ready to play it will broadcast a video cued event (5).
+  */
+
+  if (state == 1 || state == 2) {
+    alert('the "play" button *might* have been clicked');
+  }
+
+}
+
+function goTo(number) {
+
+  //alert(number)
+
+  if (number == "1"){
+    location.href = "../";
+  }
+  if (number == "2"){
+    location.href = "../";
+  }
+  if (number == "3"){
+    location.href = "../business.html";
+  }
+  if (number == "4"){
+    location.href = "../cx.html";
+
+  }
+  if (number == "5"){
+    location.href = "../career.html";
+
+  }
+  if (number == "6"){
+    //window.open("https://videos.medallia.com/watch/oVcig2LthwonLBbuA5cfQ5?");
+    window.open("video.mp4");
+
+  }
+  if (number == "7"){
+    window.open("https://www.medallia.com/kr/b2c-customer-experience/");
+
+
+  }
+  if (number == "8"){
+    window.open("https://www.medallia.com/kr/employee-experience/");
+
+
+  }
+  if (number == "9"){
+    window.open("https://www.medallia.com/suite/digital-experience/");
+
+
+  }
+  if (number == "10"){
+    window.open("https://www.medallia.com/platform/signals/");
+
+
+  }
+  if (number == "11"){
+    window.open("https://www.medallia.com/platform/analytics/");
+
+
+  }
+  if (number == "12"){
+    window.open("https://www.medallia.com/platform/integration-layer/");
+
+
+  }
+  if (number == "13"){
+    window.open("https://www.medallia.com/platform/act/");
+
+
+  }
+  if (number == "14"){
+    window.open("https://www.medallia.com/customers/");
+
+
+  }
+  if (number == "15"){
+    window.open("https://www.medallia.com/kr/customers/samsung/");
+
+
+  }
+  if (number == "16"){
+    window.open("https://www.medallia.com/customers/lego/");
+
+
+  }
+  if (number == "17"){
+    window.open("https://www.medallia.com/customers/t-mobile/");
+
+
+  }
+  if (number == "18"){
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSduGcSH2P-wkFCJEXxeMeb1nu66Oq3wTUNWp3_OA7rOqI20Yw/viewform");
+
+
+  }
+
+
+}
+
+</script>
+
+
+<script type="text/javascript">
+	
+var size = {
+  width: window.innerWidth || document.body.clientWidth,
+  height: window.innerHeight || document.body.clientHeight 
+};
+
+//console.log(size)
+
+</script>
+
+
+</head>
+<body>
+
+<div id="myLayout">
+<img onload="onResume()" id="myImg" src="" height="100%" width="100%" class="fixed" style="max-width: 1920px; 
+  display: block; margin-left: auto; margin-right: auto;">
+
+
+<div class="originalButton" id="originButton1" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" >
+        <p class="originalText" style="width: 100%; text-align: center;">1</p>
+</div> 
+
+
+<div class="originalButton" id="originButton2" style="display: none; position:absolute;background-color:red;opacity:0.7; top: 0;" onclick="goTo('2')">
+        <p class="originalText" style="width: 100%; text-align: center;">2</p>
+</div> 
+
+
+<div class="originalButton" id="originButton3" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('3')">
+        <p class="originalText" style="width: 100%; text-align: center;">3</p>
+</div> 
+
+
+<div class="originalButton" id="originButton4" style="display: none; position:absolute;background-color:green;opacity:0.7; top: 0;" onclick="goTo('4')">
+        <p class="originalText" style="width: 100%; text-align: center;">4</p>
+</div> 
+
+
+<div class="originalButton" id="originButton5" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('5')">
+        <p class="originalText" style="width: 100%; text-align: center;">5</p>
+</div> 
+
+<div class="originalButton" id="originButton6" style="display: none; position:absolute;background-color:blueviolet;opacity:1; top: 0;" >
+      
+<!--       <video id="videoPlayer"  onclick="this.paused ? this.play() : this.pause();" muted autoplay loop>
+        <source src="video.mp4" type="video/mp4">
+        
+      </video> -->
+<iframe onclick="alert('test')" id="youtubePlayer"  width="100%" height="100%" src="https://www.youtube.com/embed/WBc5jRB-d2k?autoplay=1&mute=1&loop=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div> 
+
+<div class="originalButton" id="originButton7" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('7')">
+        <p class="originalText" style="width: 100%; text-align: center;">7</p>
+</div> 
+
+<div class="originalButton" id="originButton8" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('8')">
+        <p class="originalText" style="width: 100%; text-align: center;">8</p>
+</div> 
+
+<div class="originalButton" id="originButton9" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('9')">
+        <p class="originalText" style="width: 100%; text-align: center;">9</p>
+</div> 
+
+<div class="originalButton" id="originButton10" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('10')">
+        <p class="originalText" style="width: 100%; text-align: center;">10</p>
+</div> 
+
+<div class="originalButton" id="originButton11" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('11')">
+        <p class="originalText" style="width: 100%; text-align: center;">11</p>
+</div> 
+
+<div class="originalButton" id="originButton12" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('12')">
+        <p class="originalText" style="width: 100%; text-align: center;">12</p>
+</div> 
+
+<div class="originalButton" id="originButton13" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('13')">
+        <p class="originalText" style="width: 100%; text-align: center;">13</p>
+</div> 
+
+<div class="originalButton" id="originButton14" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('14')">
+        <p class="originalText" style="width: 100%; text-align: center;">14</p>
+</div> 
+
+<div class="originalButton" id="originButton15" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('15')">
+        <p class="originalText" style="width: 100%; text-align: center;">15</p>
+</div> 
+
+<div class="originalButton" id="originButton16" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('16')">
+        <p class="originalText" style="width: 100%; text-align: center;">16</p>
+</div> 
+
+<div class="originalButton" id="originButton17" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('17')">
+        <p class="originalText" style="width: 100%; text-align: center;">17</p>
+</div> 
+
+<div class="originalButton" id="originButton18" style="display: none; position:absolute;background-color:blueviolet;opacity:0.7; top: 0;" onclick="goTo('18')">
+        <p class="originalText" style="width: 100%; text-align: center;">18</p>
+</div> 
+
+
+ <!-- 자식 div -->
+<!--         <div class="originalButton" id="originButton" style="position:absolute;background-color:blueviolet;opacity:0.7;top: 0;left: calc(50% - 15% / 2); width:15%; height:3%; " onclick="goTo('test')">
+        <p class="originalText" style="width: 100%; text-align: center;"></p>
+        </div> -->
+
+      </img>
+
+
+
+
+</div>
+
+				<nav id="nav" style="display:none">
+					<ul>
+						<li><a href="./index.html">코어플렉스</a></li>
+						<li><a href="./business.html">실적</a></li>
+						<li><a href="./cx.html">고객경험</a></li>
+						<li><a href="./career.html">채용</a></li>
+ 						<!-- 
+ 						<li><a onclick="goLogin()">로그인</a></li>
+						<li><a onclick="goLogout()">로그아웃</a></li> -->
+					</ul>
+				</nav>
+
+
+</body>
+
+
+<script>
+
+// url 에서 parameter 추출
+
+function getParam(sname) {
+
+    var params = location.search.substr(location.search.indexOf("?") + 1);
+
+    var sval = "";
+
+    params = params.split("&");
+
+    for (var i = 0; i < params.length; i++) {
+
+        temp = params[i].split("=");
+
+        if ([temp[0]] == sname) { sval = temp[1]; }
+
+    }
+
+    return sval;
+
+}
+
+$(window).resize(function() { 
+  //console.log("Change.")
+  isFirst = true
+  onCreate()
+ });
+
+
+
+//setInterval(function(){onCreate()},1000);
+
+var isFirst = true
+
+function onResume() {
+
+  if(isFirst){
+    isFirst = false
+  	setTimeout(function(){
+  		onCreate()
+
+
+  	},10);
+  }
+}
+
+
+function onYouTubeIframeAPIReady() {
+    //var player = YT.get('youtubePlayer');
+    //player.addEventListener('onStateChange', 'player_state_changed');
+}
+
+setTimeout(function(){
+    onCreate()
+},10);
+
+// setInterval(function(){
+
+//       // var video = $('#videoPlayer').get(0);
+//       // //console.log(video)
+//       // video.currentTime = 20
+//       //console.log(video.currentTime)
+// },1000);
+
+
+function onCreate() {
+
+ //     console.log($("#videoPlayer").find('video').currentTime)
+
+var size = {
+  width: window.innerWidth || document.body.clientWidth,
+  height: window.innerHeight || document.body.clientHeight 
+};
+
+var myImg = document.getElementById("myImg");
+//console.log(myImg)
+const pageWidth  = myImg.width;
+const pageHeight = myImg.height;
+
+
+const marginWidth = (size.width - pageWidth ) / 2
+const marginHeight = pageHeight - size.height
+
+// 1200 / 4530
+//4530 - 891 = 3640
+
+	var mode = getParam('mode')
+
+	//console.log(mode)
+	
+	if(mode){
+		if (mode == "desktop"){
+			$("#myImg").attr("src","index.jpg")
+			setButton()
+		}else if (mode == "tablet"){
+      $("#myImg").attr("src","indext.jpg")
+      setButtonForTablet()
+    }else{
+			$("#myImg").attr("src","indexm.jpg")
+			setButtonForMobile()
+		}
+	}else{
+		if (size.width > 912){
+			$("#myImg").attr("src","index.jpg")
+
+
+      //$("#myLayout").css("background-image" , "url(index.jpg)"); 
+      //$("#myLayout").css("background-size" , "100%"); 
+
+
+			setButton()
+		}else if (size.width >= 768 && size.width <= 912){
+      $("#myImg").attr("src","indext.jpg")
+      setButtonForTablet()
+    }else{
+			$("#myImg").attr("src","indexm.jpg")
+			setButtonForMobile()
+		}	
+	}
+
+//}
+
+function setButton(){
+
+	//$("#myImg").attr("src","index.png")
+
+
+	// window.addEventListener("wheel", function(e){
+	// 	var _scrollTop = window.scrollY || document.documentElement.scrollTop;
+	// 	console.log(_scrollTop)
+	// },{passive : true});
+
+	// window.addEventListener("wheel", function(e){
+	// 	e.preventDefault();
+	// },{passive : false});
+
+	// //3649 일때
+
+	// var $html = $("html");
+
+	// var i = 0
+	// var isWheel = false
+
+	// $(window).on("wheel", function(e){
+
+	// 	if(isWheel) return;
+
+	// 	isWheel = true
+
+	// 	setTimeout(function(){
+	// 		isWheel = false
+	// 	}, 1500)
+
+	// 	if(e.originalEvent.deltaY > 0){
+	// 		i = i + 1 
+	// 		console.log(i)
+	// 		//$html.animate({scrollTop:1200 * i},500);
+
+	// 		if(i == 1){	
+	// 			$html.animate({scrollTop:pageHeight * 0.15},200);
+	// 		}
+	// 		else if(i == 2){	
+	// 			$html.animate({scrollTop:pageHeight * 0.2980},200);
+	// 		}
+	// 		else if(i == 3){	
+	// 			$html.animate({scrollTop:pageHeight * 0.4481},200);
+	// 		}
+	// 		else if(i == 4){	
+	// 			$html.animate({scrollTop:pageHeight * 0.5909},200);
+	// 		}
+	// 		else if(i == 5){	
+	// 			$html.animate({scrollTop:pageHeight * 0.70},200);
+	// 		}
+	// 		else{
+	// 			$html.animate({scrollTop:pageHeight},200);
+	// 		}
+
+	// 	}else if(e.originalEvent.deltaY < 0){
+	// 		i = 0
+	// 		$html.animate({scrollTop:0},500);
+	// 	}
+	// });
+
+
+    var copyButton = $("#originButton1")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.14
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.006
+    var marginLeft = pageWidth * 0.003 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+    copyButton.off('click').click(function(){
+		goTo("1")
+	});
+
+	$(".navPanelToggle").hide()
+
+    var copyButton = $("#originButton2")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.09
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.006
+    var marginLeft = pageWidth - buttonWidth * 4 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+
+    var copyButton = $("#originButton3")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.09
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.006
+    var marginLeft = pageWidth - buttonWidth * 3 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+
+    var copyButton = $("#originButton4")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.09
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.006
+    var marginLeft = pageWidth - buttonWidth * 2 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+
+    var copyButton = $("#originButton5")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.09
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.006
+    var marginLeft = pageWidth - buttonWidth * 1 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+    var copyButton = $("#originButton6")
+
+    var buttonHeight = pageHeight * 0.15
+    var buttonWidth = pageWidth
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.15
+    var marginLeft = 0 + marginWidth
+
+
+
+    // var videoPlayer = $('#videoPlayer').get(0);
+    // //console.log(videoPlayer)
+    // $(videoPlayer).show()
+
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    //copyButton.css("background-image" , "url(video.gif)"); 
+    //copyButton.css("background-size" , "100%"); 
+    copyButton.show()
+
+
+    var copyButton = $("#originButton7")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.357
+    var marginLeft = pageWidth * 0.04 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton8")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.357
+    var marginLeft = pageWidth * 0.37 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton9")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.357
+    var marginLeft = pageWidth * 0.7 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton10")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.515
+    var marginLeft = pageWidth * 0.04 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton11")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.515
+    var marginLeft = pageWidth * 0.54 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton12")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.555
+    var marginLeft = pageWidth * 0.04 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton13")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.555
+    var marginLeft = pageWidth * 0.54 + marginWidth
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+
+    var copyButton = $("#originButton14")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.677
+    var marginLeft = pageWidth/2 - buttonWidth/2  + marginWidth
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+
+    var copyButton = $("#originButton15")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.8
+    var marginLeft = pageWidth * 0.14 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton16")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.8
+    var marginLeft = pageWidth * 0.46 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton17")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.09
+    var marginTop = pageHeight * 0.8
+    var marginLeft = pageWidth * 0.77 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton18")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.12
+    var marginTop = pageHeight * 0.903
+    var marginLeft = pageWidth * 0.75 + marginWidth
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+}
+
+function setButtonForTablet(){
+
+    var copyButton = $("#originButton1")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.17
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.004
+    var marginLeft = pageWidth * 0.003
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+    copyButton.off('click').click(function(){
+    goTo("1")
+  });
+
+  $(".navPanelToggle").hide()
+
+    var copyButton = $("#originButton2")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.15
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.004
+    var marginLeft = pageWidth - buttonWidth * 4
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+
+    var copyButton = $("#originButton3")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.15
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.004
+    var marginLeft = pageWidth - buttonWidth * 3
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+
+    var copyButton = $("#originButton4")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.15
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.004
+    var marginLeft = pageWidth - buttonWidth * 2
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+
+    var copyButton = $("#originButton5")
+
+    var buttonHeight = pageHeight * 0.01
+    var buttonWidth = pageWidth * 0.15
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.004
+    var marginLeft = pageWidth - buttonWidth * 1
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+    var copyButton = $("#originButton6")
+
+    var buttonHeight = pageHeight * 0.09
+    var buttonWidth = pageWidth
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.12
+    var marginLeft = 0
+
+    // var videoPlayer = $('#videoPlayer').get(0);
+    // //console.log(videoPlayer)
+    // $(videoPlayer).show()
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    //copyButton.css("background-image" , "url(video.gif)"); 
+    //copyButton.css("background-size" , "100%"); 
+    copyButton.show()
+
+
+    var copyButton = $("#originButton7")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.257
+    var marginLeft = pageWidth * 0.28
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton8")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.34
+    var marginLeft = pageWidth * 0.09
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton9")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.34
+    var marginLeft = pageWidth * 0.57
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton10")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.468
+    var marginLeft = pageWidth * 0.045
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton11")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.505
+    var marginLeft = pageWidth * 0.045
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton12")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.545
+    var marginLeft = pageWidth * 0.045
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton13")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.58
+    var marginLeft = pageWidth * 0.045
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+
+    var copyButton = $("#originButton14")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.21
+    var marginTop = pageHeight * 0.68
+    var marginLeft = pageWidth/2 - buttonWidth/2 
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+
+    var copyButton = $("#originButton15")
+
+    var buttonHeight = pageHeight * 0.012
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.784
+    var marginLeft = pageWidth * 0.44
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton16")
+
+    var buttonHeight = pageHeight * 0.012
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.858
+    var marginLeft = pageWidth * 0.21
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton17")
+
+    var buttonHeight = pageHeight * 0.012
+    var buttonWidth = pageWidth * 0.15
+    var marginTop = pageHeight * 0.858
+    var marginLeft = pageWidth * 0.679
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton18")
+
+    var buttonHeight = pageHeight * 0.014
+    var buttonWidth = pageWidth * 0.21
+    var marginTop = pageHeight * 0.923
+    var marginLeft = pageWidth * 0.78
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+}
+
+function setButtonForMobile(){
+
+
+	//$("#myImg").attr("src","indexm.png")
+
+    var copyButton = $("#originButton1")
+
+    var buttonHeight = pageHeight * 0.016
+    var buttonWidth = pageWidth 
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0
+    var marginLeft = pageWidth * 0
+
+
+	$(".navPanelToggle").show()
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+    //$('body').append(copyButton)
+
+    // var copyButton = $("#originButton1")
+    // copyButton.hide()
+
+    var copyButton = $("#originButton2")
+    copyButton.hide()
+
+    var copyButton = $("#originButton3")
+    copyButton.hide()
+
+    var copyButton = $("#originButton4")
+    copyButton.hide()
+
+    var copyButton = $("#originButton5")
+    copyButton.hide()
+
+   
+    var copyButton = $("#originButton6")
+
+    var buttonHeight = pageHeight * 0.032
+    var buttonWidth = pageWidth
+    //var marginTop = pageHeight * 0.14
+    var marginTop = pageHeight * 0.187
+    var marginLeft = 0
+
+
+    // var videoPlayer = $('#videoPlayer').get(0);
+    // //console.log(videoPlayer)
+    // //$(videoPlayer).hide()
+    // $(videoPlayer).show()
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    //copyButton.css("background-image" , "url(video.gif)"); 
+    //copyButton.css("background-size" , "100%"); 
+    copyButton.show()
+
+
+    var copyButton = $("#originButton7")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.4
+    var marginTop = pageHeight * 0.28
+    var marginLeft = pageWidth * 0.047
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton8")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.4
+    var marginTop = pageHeight * 0.315
+    var marginLeft = pageWidth * 0.57
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton9")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.4
+    var marginTop = pageHeight * 0.355
+    var marginLeft = pageWidth * 0.047
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton10")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.4
+    var marginTop = pageHeight * 0.433
+    var marginLeft = pageWidth * 0.55
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton11")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.4
+    var marginTop = pageHeight * 0.474
+    var marginLeft = pageWidth * 0.55
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton12")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.4
+    var marginTop = pageHeight * 0.512
+    var marginLeft = pageWidth * 0.55
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton13")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.4
+    var marginTop = pageHeight * 0.548
+    var marginLeft = pageWidth * 0.55
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+
+    var copyButton = $("#originButton14")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.6
+    var marginTop = pageHeight * 0.634
+    var marginLeft = pageWidth/2 - buttonWidth/2 
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+
+    var copyButton = $("#originButton15")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.6
+    var marginTop = pageHeight * 0.716
+    var marginLeft = pageWidth/2 - buttonWidth/2 
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton16")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.6
+    var marginTop = pageHeight * 0.775
+    var marginLeft = pageWidth/2 - buttonWidth/2 
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton17")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.6
+    var marginTop = pageHeight * 0.835
+    var marginLeft = pageWidth/2 - buttonWidth/2 
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+
+    var copyButton = $("#originButton18")
+
+    var buttonHeight = pageHeight * 0.009
+    var buttonWidth = pageWidth * 0.6
+    var marginTop = pageHeight * 0.94
+    var marginLeft = pageWidth/2 - buttonWidth/2 
+
+
+    copyButton.css("width", buttonWidth);
+    copyButton.css("height", buttonHeight);
+    copyButton.css("margin-top", marginTop);
+    copyButton.css("left", marginLeft);
+    copyButton.show()
+}
+
+
+}
+
+</script>
+
+
+</html>

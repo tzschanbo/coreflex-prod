@@ -41,9 +41,14 @@
 
 		// Off-Canvas Navigation.
 
-			// Navigation Panel Toggle.
+//			Navigation Panel Toggle.
 				$('<a href="#navPanel" class="navPanelToggle"></a>')
 					.appendTo($body);
+
+			// Navigation Panel Toggle.
+				// $('<a href="#navPanel" class="navPanelToggle"></a>')
+				// 	.appendTo($body);
+
 
 			// Navigation Panel.
 				$(
