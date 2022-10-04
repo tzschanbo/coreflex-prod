@@ -74,7 +74,7 @@ font-size: 0px;
 }
 
 
-#myImg{
+#myImg{1800
 		height: 100%;
 		width: 100%;
 }
@@ -636,10 +636,12 @@ function setButton(){
     var copyButton = $("#originButton6")
 
     var buttonHeight = pageHeight * 0.140
-    var buttonWidth = pageWidth 
+    var buttonWidth = pageWidth - 1
     //var marginTop = pageHeight * 0.14
     var marginTop = pageHeight * 0.147
-    var marginLeft = 0 + marginWidth 
+    //var marginLeft = 0 + marginWidth 
+
+    var marginLeft = pageWidth/2 - buttonWidth/2  + marginWidth
 
 
     // var videoPlayer = $('#videoPlayer').get(0);
