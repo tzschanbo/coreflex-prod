@@ -75,12 +75,12 @@ font-size: 0px;
 }
 
 #captionLayout {
-  background-color:transparent !important; 
+  //background-color:transparent !important; 
   //cursor : pointer;
 }
 
 #buttonLayout {
-  background-color:transparent !important; 
+  //background-color:transparent !important; 
   cursor : pointer;
 }
 
@@ -167,6 +167,17 @@ font-size: 0px;
 <script type="text/javascript">
 
 
+
+setTimeout(function (argument) {
+
+  // Enable collection for the current session 
+  // and future sessions for the current visitor.
+  decibelInsight('setCollection', true);  
+
+},1000)
+
+
+
 function buttonEvent(number) {
 
   //alert(number)
@@ -175,6 +186,7 @@ function buttonEvent(number) {
 //    location.href = "../";
     //window.open("https://forms.gle/59QWqorSDJLbfz5A6");
     //location.href = "../form.html";
+
 
     window.open("https://docs.google.com/forms/d/e/1FAIpQLSduGcSH2P-wkFCJEXxeMeb1nu66Oq3wTUNWp3_OA7rOqI20Yw/viewform?usp=sf_link");
   }
@@ -462,12 +474,12 @@ var size = {
         <h class="captionText" style="width: 100px;height: 100px; text-align: center;"></h><br>
 </div> 
  -->
-<div id="buttonLayout" class="tooltip" onclic2k= "buttonEvent(this)" style="display: block;  width: 100px;height: 100px;  position:absolute;background-color:blueviolet;opacity:0.7;z-index: 9999;top: 0; margin-left: 10; margin-top: 10;" >
+<a id="buttonLayout" class="tooltip" onclic2k= "buttonEvent(this)" style="display: block;  width: 100px;height: 100px;  position:absolute;background-color:blueviolet;opacity:0.7;z-index: 9999;top: 0; margin-left: 10; margin-top: 10;" >
         <h class="buttonText" style="width: 100px;height: 100px; text-align: center; color:darkblue"></h><br>
 
         <span class="tooltiptext"></span>
         <button text="add" onclick="addButtonItem()"></button>
-</div> 
+</a> 
 
 
  <!-- 자식 div -->
