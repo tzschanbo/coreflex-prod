@@ -75,12 +75,12 @@ font-size: 0px;
 }
 
 #captionLayout {
-  //background-color:transparent !important; 
+  background-color:transparent !important; 
   //cursor : pointer;
 }
 
 #buttonLayout {
-  //background-color:transparent !important; 
+  background-color:transparent !important; 
   cursor : pointer;
 }
 
@@ -172,7 +172,7 @@ setTimeout(function (argument) {
 
   // Enable collection for the current session 
   // and future sessions for the current visitor.
-  decibelInsight('setCollection', true);  
+  decibelInsight('startSession');  
 
 },1000)
 
@@ -1035,7 +1035,7 @@ function setButtonForTablet(){
     var buttonHeight = pageHeight * 0.09
     var buttonWidth = pageWidth
     //var marginTop = pageHeight * 0.14
-    var marginTop = pageHeight * 0.12
+    var marginTop = pageHeight * 0.1268
     var marginLeft = 0
 
     // var videoPlayer = $('#videoPlayer').get(0);
